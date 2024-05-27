@@ -7,9 +7,11 @@ Materials and resourses for the ACE Cancer Genomics Working Group Variant Callin
 (https://github.com/sanger-tool) thats the github repository
 
 ## Known Dependencies:
-- FastQC
+- [FastQC](https://github.com/s-andrews/FastQC)
 - MultiQC
 - Trim_galore
 - Trimmomatic
+- FastP
+- 
 
 ![Pipeline Workflow](Pipeline_workflow.png)
