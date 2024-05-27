@@ -8,10 +8,12 @@ Materials and resourses for the ACE Cancer Genomics Working Group Variant Callin
 
 ## Known Dependencies:
 - [FastQC](https://github.com/s-andrews/FastQC)
-- MultiQC
-- Trim_galore
-- Trimmomatic
-- FastP
+- [MultiQC](https://github.com/MultiQC/MultiQC)
+- [Trim Galore](https://github.com/FelixKrueger/TrimGalore/blob/master/Docs/Trim_Galore_User_Guide.md)
+- [Trimmomatic](https://github.com/usadellab/Trimmomatic)
+- [FastP](https://github.com/OpenGene/fastp)
+- [BWA-MEM](https://github.com/lh3/bwa)
+- [Bowtie2](https://github.com/BenLangmead/bowtie2)
 - 
 
 ![Pipeline Workflow](Pipeline_workflow.png)
