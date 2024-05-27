@@ -12,4 +12,4 @@ Materials and resourses for the ACE Cancer Genomics Working Group Variant Callin
 - Trim_galore
 - Trimmomatic
 
-[Pipeline_workflow.png](Pipeline)
+![Pipeline Workflow](Pipeline_workflow.png)
