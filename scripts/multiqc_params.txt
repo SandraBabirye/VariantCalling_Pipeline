@@ -1,0 +1,15 @@
+-x/--ignore	Ignoring files
+-n/--filename	Renaming reports
+-0/--outdir	Specifying a new output directory
+-f/--force	Overwriting existing report
+-m/--modules	Choosing which modules to run
+-e/--exclude	To run all modules except those listed
+-v/--verbose	Find out whether log files with the same sample names are encountered
+-d/--dirs	Prefix every sample name with the directory path for that log file
+-n stdout	Printing to stdout
+-t/--template	Produce reports with different styling
+-p/--export	Save plots as stand-alone files
+--pdf		Creating a pdf report
+--data-dir
+   or           To specify whether to produce the data directory
+--no-data-dir   
