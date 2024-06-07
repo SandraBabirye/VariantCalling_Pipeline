@@ -8,7 +8,7 @@ fi
 
 # Define a list of conda envs to create: --> conda_env[env_name]="Tools to install in the env"
 declare -A conda_env
-conda_env[env-preprocessing]="trim-galore fastp trimmomatic multiqc"
+conda_env[env-preprocessing]="trim-galore fastp trimmomatic"
 conda_env[env-alignment]="bwa bowtie2 samtools"
 
 
@@ -28,5 +28,11 @@ for env_name in ${!conda_env[@]}; do
 done
 
 
-
-#conda create -n trimming -c bioconda -c conda-forge trim-galore fastp trimmomatic
+# Create MultiQC env from a yml file
+if ! [[ -d conda_envs/env-multiQC ]]; then
+	echo "Create env-MultiQC..."
+	conda env create --prefix conda_envs/env-multiQC --file env-multiqc.yml --yes
+	echo Created env-multiQC.
+else
+	echo "env-multiQC already exists, skipping..."
+fi
