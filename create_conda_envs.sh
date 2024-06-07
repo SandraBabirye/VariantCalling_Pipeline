@@ -31,7 +31,7 @@ done
 # Create MultiQC env from a yml file
 if ! [[ -d conda_envs/env-multiQC ]]; then
 	echo "Create env-MultiQC..."
-	conda env create --prefix conda_envs/env-multiQC --file env-multiqc.yml --yes
+	conda env create --prefix conda_envs/env-multiQC --file env-multiqc.yml --yes --quiet
 	echo Created env-multiQC.
 else
 	echo "env-multiQC already exists, skipping..."
