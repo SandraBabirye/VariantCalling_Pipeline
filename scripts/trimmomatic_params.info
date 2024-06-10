@@ -1,0 +1,17 @@
+Mandatory arguments:
+         --PE	                        paired end reads (fastq files)
+         --SE				Single end reads (fastq file)
+         --ref                          Reference genome (full path required)
+         --adapter                      Adapter sequence to use for trimming (required for trimmomatic tool)
+
+       Optional arguments:
+        --outdir                       Output directory to place final BLAST output
+        --phred			       Phred score (default = phred 33) for trimmomatic
+        --threads                      Number of CPUs to use during blast job [16]
+        --tool                         Which tool to use to trim reads [trimmomatic, trimgalore, fastp]
+        --LEADING		       Cut bases off the start of a read, if below a threshold quality
+        --TRAILING		       Cut bases off the end of a read, if below a threshold quality
+        --SLIDINGWINDOW		       Performs a sliding window trimming approach. It starts scanning at the 5‟ end and clips the read once the average quality within the window falls belo            
+                                       below a threshold [deafult SLIDINGWINDOW:4:15]
+        --MINLEN		       Drop the read if it is below a specified length 
+
